@@ -1,0 +1,154 @@
+body{
+    font-family: 'Bitter', sans-serif;
+    background-color: #bac7be;
+}
+
+.header{
+    background-color: #7daf9c;
+    border-radius: 40px;
+    width: 100%;
+    height: 70px;
+    max-width: 900px;
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+section.slider{
+    margin: 30px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.slider__content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider__content input{
+    display: none;
+}
+
+.slider__box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.img__desk1{
+    height: 400px;
+    max-width: 800px
+}
+
+.img__desk3{
+    height: 400px;
+    max-width: 800px;
+}
+
+
+.nav__manual, .nav__auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__manual .manual__btn, .nav__auto div{
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav__manual .manual__btn:not(:last-child), .nav__auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav__manual .manual__btn:hover{
+    background-color: black;
+}
+
+#radio1:checked ~ .nav__auto .auto-btn1, #radio2:checked ~ .nav__auto .auto-btn2, #radio3:checked ~ .nav__auto .auto-btn3{
+    background-color: black;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+
+.icone__bug{
+    margin: 0 30px;
+    animation: continuous 2s infinite alternate;
+}
+
+
+.main{
+    background-color: #7daf9c;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 100%;
+    width: 900px;
+    margin: 100px auto;
+}
+
+
+.section{
+    text-align: left;
+    margin: 10px;
+    
+}
+
+.img__bug{
+    width: 70%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.footer{
+    background-color: #7daf9c;
+    border-radius: 30px;
+    text-align: center;
+
+}
+
+
+
+
+@keyframes continuous {
+    0% {
+		transform: rotate(320deg) translateX(25px);
+	}
+	100% {
+		transform: rotate(90deg) translateX(15px);
+	}
+}
+
+@media screen and (max-width:880px) {
+    .img__desk, .img__desk1, .img__desk3{
+        display: none;
+    }
+
+    .nav__auto, .nav__manual{
+        display: none;
+    }
+    
+}

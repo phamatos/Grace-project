@@ -11,7 +11,14 @@ body{
     max-width: 900px;
     display: flex;
     margin: 0 auto;
-    
+    box-sizing: border-box;
+
+}
+
+.header__link{
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 20px;  
 }
 
 section.slider{
